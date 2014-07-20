@@ -31,7 +31,8 @@ daily<-ddply(data,.(date),# ddply creates a data frame from data splited by vari
               )
 
 library(ggplot2)
- 
+ggplot(daily)+
+        geom_histogram(aes(sum),binwidth=1000)
 
 # create summaries mean, median, sum for interval data with NA removed
 perminute<-ddply(data,.(interval),# ddply creates a data frame from data splited by variable date
