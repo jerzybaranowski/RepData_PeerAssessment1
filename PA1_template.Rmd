@@ -1,3 +1,10 @@
+---
+output:
+  html_document:
+    self_contained: no
+  pdf_document:
+    keep_tex: yes
+---
 # Reproducible Research: Peer Assessment 1
 by **Jerzy Baranowski**
 
@@ -150,3 +157,4 @@ ggplot(perminute2,aes(time,mean))+
 
 ```
 
+Remark: In newer versions of RStudio the figures are located in "PA1_template_files/figure-html" 
